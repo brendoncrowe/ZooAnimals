@@ -7,7 +7,8 @@
 
 import UIKit
 
-extension BasicCellAnimalController: UITableViewDataSource {
+extension BasicCellAnimalController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
     }
@@ -17,10 +18,14 @@ extension BasicCellAnimalController: UITableViewDataSource {
         let animal = animals[indexPath.row]
         var cellContent = cell.defaultContentConfiguration()
         cellContent.image = UIImage(named: animal.imageNumber.description)
-        cellContent.imageProperties.maximumSize = CGSize(width: 60, height: 60)
+        cellContent.imageProperties.maximumSize = CGSize(width: 80, height: 80)
         cellContent.text = animal.name
         cellContent.secondaryText = animal.origin
         cell.contentConfiguration = cellContent
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
 }

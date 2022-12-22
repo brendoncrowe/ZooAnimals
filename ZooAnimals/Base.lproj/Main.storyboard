@@ -69,21 +69,93 @@
             </objects>
             <point key="canvasLocation" x="2919.8473282442746" y="3.5211267605633805"/>
         </scene>
-        <!--Animal Sections View Controller-->
+        <!--Zoo Animals-->
         <scene sceneID="eoi-hc-sFN">
             <objects>
                 <viewController id="1gS-m4-TdO" customClass="AnimalSectionsViewController" customModule="ZooAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rVb-tW-SN4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-W9-puT">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalCell" rowHeight="140" id="P7O-rf-9Gu" customClass="AnimalCell" customModule="ZooAnimals" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P7O-rf-9Gu" id="qI2-fm-Uql">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGF-wu-L7H">
+                                                    <rect key="frame" x="253" y="0.0" width="140" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="OKJ-bf-XbI"/>
+                                                        <constraint firstAttribute="width" constant="140" id="Oqw-kZ-yxH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekf-QT-vyb">
+                                                    <rect key="frame" x="28" y="19" width="217" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8u-US-iF9">
+                                                    <rect key="frame" x="28" y="48" width="217" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0w-D0-VFE">
+                                                    <rect key="frame" x="30" y="114" width="215" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dGF-wu-L7H" firstAttribute="top" secondItem="qI2-fm-Uql" secondAttribute="top" id="15y-Yf-8zV"/>
+                                                <constraint firstItem="f0w-D0-VFE" firstAttribute="leading" secondItem="qI2-fm-Uql" secondAttribute="leading" constant="30" id="AZJ-AN-1Ve"/>
+                                                <constraint firstItem="J8u-US-iF9" firstAttribute="top" secondItem="Ekf-QT-vyb" secondAttribute="bottom" constant="8" id="DwP-Qw-aCV"/>
+                                                <constraint firstItem="J8u-US-iF9" firstAttribute="leading" secondItem="qI2-fm-Uql" secondAttribute="leadingMargin" constant="8" id="GZw-bi-uhA"/>
+                                                <constraint firstAttribute="bottom" secondItem="dGF-wu-L7H" secondAttribute="bottom" id="LGw-eL-mh1"/>
+                                                <constraint firstItem="dGF-wu-L7H" firstAttribute="leading" secondItem="Ekf-QT-vyb" secondAttribute="trailing" constant="8" id="OfI-Zc-5rR"/>
+                                                <constraint firstItem="dGF-wu-L7H" firstAttribute="leading" secondItem="f0w-D0-VFE" secondAttribute="trailing" constant="8" id="Q1b-iN-zct"/>
+                                                <constraint firstItem="Ekf-QT-vyb" firstAttribute="leading" secondItem="qI2-fm-Uql" secondAttribute="leadingMargin" constant="8" id="UmY-Op-YlK"/>
+                                                <constraint firstItem="Ekf-QT-vyb" firstAttribute="top" secondItem="qI2-fm-Uql" secondAttribute="topMargin" constant="8" id="ee7-ps-IHn"/>
+                                                <constraint firstAttribute="bottom" secondItem="f0w-D0-VFE" secondAttribute="bottom" constant="8" id="eyK-6z-ONE"/>
+                                                <constraint firstAttribute="trailing" secondItem="dGF-wu-L7H" secondAttribute="trailing" id="fM7-mO-yv4"/>
+                                                <constraint firstItem="dGF-wu-L7H" firstAttribute="leading" secondItem="J8u-US-iF9" secondAttribute="trailing" constant="8" id="zdt-T6-dfU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalClassification" destination="J8u-US-iF9" id="BPO-5G-DKj"/>
+                                            <outlet property="animalImageView" destination="dGF-wu-L7H" id="yvD-gC-n8T"/>
+                                            <outlet property="animalNameLabel" destination="Ekf-QT-vyb" id="mfB-JK-dA8"/>
+                                            <outlet property="animalOriginLabel" destination="f0w-D0-VFE" id="S8g-VQ-xuw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Rj-4z-3Q7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tph-W9-puT" firstAttribute="top" secondItem="5Rj-4z-3Q7" secondAttribute="top" id="08i-jH-YHB"/>
+                            <constraint firstItem="Tph-W9-puT" firstAttribute="trailing" secondItem="5Rj-4z-3Q7" secondAttribute="trailing" id="bwQ-cJ-dL3"/>
+                            <constraint firstItem="Tph-W9-puT" firstAttribute="leading" secondItem="5Rj-4z-3Q7" secondAttribute="leading" id="k2G-oq-xLM"/>
+                            <constraint firstItem="Tph-W9-puT" firstAttribute="bottom" secondItem="5Rj-4z-3Q7" secondAttribute="bottom" id="qZC-WP-MjK"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CxD-lS-NDF"/>
+                    <navigationItem key="navigationItem" title="Zoo Animals" id="CxD-lS-NDF"/>
+                    <connections>
+                        <outlet property="tableView" destination="Tph-W9-puT" id="v7e-wh-C8n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="666-Wa-Seb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2920" y="1537"/>
+            <point key="canvasLocation" x="2919.8473282442746" y="1536.6197183098593"/>
         </scene>
         <!--Zoo Animals-->
         <scene sceneID="mwY-gT-biz">
@@ -94,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="v6l-np-X21">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalCell" rowHeight="151" id="IXy-db-uCN" customClass="AnimalCell" customModule="ZooAnimals" customModuleProvider="target">
@@ -230,14 +302,14 @@
             </objects>
             <point key="canvasLocation" x="2198" y="706"/>
         </scene>
-        <!--Item-->
+        <!--Animal Section-->
         <scene sceneID="LLh-n1-Ieb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ec-9N-m6H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3gw-gz-yYb"/>
+                    <tabBarItem key="tabBarItem" title="Animal Section" image="3.circle" catalog="system" id="3gw-gz-yYb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tOl-kO-SUA">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="tOl-kO-SUA">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -254,6 +326,7 @@
         <image name="1" width="720" height="422"/>
         <image name="1.circle" catalog="system" width="128" height="123"/>
         <image name="2.circle" catalog="system" width="128" height="123"/>
+        <image name="3.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

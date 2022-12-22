@@ -20,6 +20,4 @@ class AnimalCell: UITableViewCell {
         animalOriginLabel.text = animal.origin
         animalClassification.text = animal.classification
     }
-    
-    
 }

@@ -18,7 +18,6 @@
 		401F05C72953A02B00C7B476 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F05C62953A02B00C7B476 /* CustomCellViewController.swift */; };
 		401F05C92953A04800C7B476 /* AnimalSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F05C82953A04800C7B476 /* AnimalSectionsViewController.swift */; };
 		40A6DB452953E59900DC0F62 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6DB442953E59900DC0F62 /* AnimalCell.swift */; };
-		40A6DB472953E7F700DC0F62 /* CustomAnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6DB462953E7F700DC0F62 /* CustomAnimalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		401F05C62953A02B00C7B476 /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
 		401F05C82953A04800C7B476 /* AnimalSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSectionsViewController.swift; sourceTree = "<group>"; };
 		40A6DB442953E59900DC0F62 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
-		40A6DB462953E7F700DC0F62 /* CustomAnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				401F05C429539F0100C7B476 /* BasicCellTableView.swift */,
-				40A6DB462953E7F700DC0F62 /* CustomAnimalCell.swift */,
 				40A6DB442953E59900DC0F62 /* AnimalCell.swift */,
 			);
 			path = ExtensionsAndClasses;
@@ -176,7 +173,6 @@
 				401F05C72953A02B00C7B476 /* CustomCellViewController.swift in Sources */,
 				401F05C92953A04800C7B476 /* AnimalSectionsViewController.swift in Sources */,
 				401F05C529539F0100C7B476 /* BasicCellTableView.swift in Sources */,
-				40A6DB472953E7F700DC0F62 /* CustomAnimalCell.swift in Sources */,
 				401F05C12953939A00C7B476 /* ZooAnimal.swift in Sources */,
 				40A6DB452953E59900DC0F62 /* AnimalCell.swift in Sources */,
 				401F05AB2953937B00C7B476 /* AppDelegate.swift in Sources */,

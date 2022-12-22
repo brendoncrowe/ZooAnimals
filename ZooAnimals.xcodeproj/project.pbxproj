@@ -14,10 +14,10 @@
 		401F05B72953937D00C7B476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401F05B52953937D00C7B476 /* LaunchScreen.storyboard */; };
 		401F05C12953939A00C7B476 /* ZooAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F05C02953939A00C7B476 /* ZooAnimal.swift */; };
 		401F05C3295393D700C7B476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401F05C2295393D700C7B476 /* Assets.xcassets */; };
-		401F05C529539F0100C7B476 /* BasicCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F05C429539F0100C7B476 /* BasicCellTableView.swift */; };
 		401F05C72953A02B00C7B476 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F05C62953A02B00C7B476 /* CustomCellViewController.swift */; };
 		401F05C92953A04800C7B476 /* AnimalSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F05C82953A04800C7B476 /* AnimalSectionsViewController.swift */; };
 		40A6DB452953E59900DC0F62 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6DB442953E59900DC0F62 /* AnimalCell.swift */; };
+		40FCB2442954D71000746BC4 /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FCB2432954D71000746BC4 /* AnimalDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		401F05B82953937D00C7B476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		401F05C02953939A00C7B476 /* ZooAnimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZooAnimal.swift; path = "../../../../Downloads/ZooAnimals-master/ZooAnimals/ZooAnimal.swift"; sourceTree = "<group>"; };
 		401F05C2295393D700C7B476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		401F05C429539F0100C7B476 /* BasicCellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCellTableView.swift; sourceTree = "<group>"; };
 		401F05C62953A02B00C7B476 /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
 		401F05C82953A04800C7B476 /* AnimalSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSectionsViewController.swift; sourceTree = "<group>"; };
 		40A6DB442953E59900DC0F62 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		40FCB2432954D71000746BC4 /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,11 @@
 		401F05A92953937B00C7B476 /* ZooAnimals */ = {
 			isa = PBXGroup;
 			children = (
-				401F05CA2953A05500C7B476 /* ViewControllers */,
+				401F05AE2953937B00C7B476 /* BasicCellAnimalController.swift */,
+				401F05C62953A02B00C7B476 /* CustomCellViewController.swift */,
+				401F05C82953A04800C7B476 /* AnimalSectionsViewController.swift */,
+				40FCB2432954D71000746BC4 /* AnimalDetailViewController.swift */,
+				40A6DB442953E59900DC0F62 /* AnimalCell.swift */,
 				401F05AA2953937B00C7B476 /* AppDelegate.swift */,
 				401F05AC2953937B00C7B476 /* SceneDelegate.swift */,
 				401F05C02953939A00C7B476 /* ZooAnimal.swift */,
@@ -76,26 +80,6 @@
 				401F05B82953937D00C7B476 /* Info.plist */,
 			);
 			path = ZooAnimals;
-			sourceTree = "<group>";
-		};
-		401F05CA2953A05500C7B476 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				401F05AE2953937B00C7B476 /* BasicCellAnimalController.swift */,
-				401F05C62953A02B00C7B476 /* CustomCellViewController.swift */,
-				401F05C82953A04800C7B476 /* AnimalSectionsViewController.swift */,
-				401F05CB2953A14E00C7B476 /* ExtensionsAndClasses */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		401F05CB2953A14E00C7B476 /* ExtensionsAndClasses */ = {
-			isa = PBXGroup;
-			children = (
-				401F05C429539F0100C7B476 /* BasicCellTableView.swift */,
-				40A6DB442953E59900DC0F62 /* AnimalCell.swift */,
-			);
-			path = ExtensionsAndClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +156,11 @@
 				401F05AF2953937B00C7B476 /* BasicCellAnimalController.swift in Sources */,
 				401F05C72953A02B00C7B476 /* CustomCellViewController.swift in Sources */,
 				401F05C92953A04800C7B476 /* AnimalSectionsViewController.swift in Sources */,
-				401F05C529539F0100C7B476 /* BasicCellTableView.swift in Sources */,
 				401F05C12953939A00C7B476 /* ZooAnimal.swift in Sources */,
 				40A6DB452953E59900DC0F62 /* AnimalCell.swift in Sources */,
 				401F05AB2953937B00C7B476 /* AppDelegate.swift in Sources */,
 				401F05AD2953937B00C7B476 /* SceneDelegate.swift in Sources */,
+				40FCB2442954D71000746BC4 /* AnimalDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,12 +21,17 @@ class CustomCellViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        title = "Zoo Animals"
         loadData()
     }
     
     func loadData() {
         animals = ZooAnimal.zooAnimals
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let animalDetailVC = segue.destination as? AnimalDetailViewController, let indexPath = tableView.indexPathForSelectedRow else { fatalError("failed to get indexPath and AnimalDetailViewController") }
+        let animal = animals
+        animalDetailVC.animal = animal[indexPath.row]
     }
 }
 

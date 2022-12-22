@@ -20,3 +20,6 @@ The purpose of this app is to demonstrate various table view cell layouts
  ### Sections
  ![cells-and-sections](Assets/AnimalSection.png)
  
+ ### Detail View
+ ![cells-and-sections](Assets/detailView.png)
+ 

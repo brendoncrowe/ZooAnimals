@@ -11,14 +11,20 @@ class BasicCellAnimalController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        print("There are \(ZooAnimal.classificationSections().count) animals classifications")
-        dump(ZooAnimal.classificationSections())
-        
+    var animals = [ZooAnimal]() {
+        didSet {
+            tableView.reloadData()
+        }
     }
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        loadData()
+    }
+    
+    func loadData() {
+        animals = ZooAnimal.zooAnimals
+    }
 }
 
